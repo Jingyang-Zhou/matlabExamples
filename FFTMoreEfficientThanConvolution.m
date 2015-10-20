@@ -76,3 +76,4 @@ subplot(3, 1, 3)
 plot(timeStopConv - timeStopFFT, '.-'), hold on
 plot(1 : numTimeLength, zeros(1, numTimeLength), ':')
 title('convolution time - fft time')
+ylabel('difference')

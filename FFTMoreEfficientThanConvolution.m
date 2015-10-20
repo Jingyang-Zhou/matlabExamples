@@ -43,12 +43,15 @@ ftImpulse        = fft(impulse);
 tic;
 output           = conv(stimulus, impulse);
 output           = output(1 : length(stimulus));
+
 timeStopConv(timeLength) = toc;
 
 
 % fft (convolution in the time domain = multiplication in the Fourier domain)
+
 tic;
 ftOutput         = ifft(ftStimulus.* ftImpulse);
+
 timeStopFFT(timeLength) = toc;
 
 end
